@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MedievalSharp", cursive;
+  background-color: #FFEFE7;
+  background-image: url(https://images.alphacoders.com/679/679755.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar {
+  width: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FA9500;
+  padding: 0 30px;
+}
+
+.navbar p {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .icons button {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  justify-self: end;
+  border: none;
+  background: none;
+}
+
+.navbar .icons button svg {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar .icons button svg path {
+  stroke: #2f0ac3;
+}
+
+.main {
+  color: #210cc7;
+  padding: 0 64px;
+  max-width: 100vw;
+}
+
+.main article {
+  display: grid;
+  grid-template-columns: 50% auto;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  min-height: 88vh;
+}
+
+.main article h1 {
+  font-size: 3em;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.main article p {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 32.5px;
+}
+
+.main article button {
+  background: none;
+  border-style: none;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 20px 40px;
+  border-radius: 35px;
+  color: #FFEFE7;
+  background-color: #FA9500;
+  transition: transform 0.2s;
+}
+
+.main article button:hover {
+  transform: scale(1.1);
+}
+
+.main article img {
+  justify-self: end;
+  width: 25vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+section h2 {
+  color: #2d09e2;
+  font-size: 2em;
+}
+
+section .healthcare, section .about-us, section .gallery, section .furniture {
+  padding-bottom: 72px;
+}
+
+section .healthcare h2, section .about-us h2, section .gallery h2, section .furniture h2 {
+  font-weight: 300;
+}
+
+section .healthcare .card-section, section .about-us .card-section, section .gallery .card-section, section .furniture .card-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-auto-rows: 540px;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  row-gap: 72px;
+}
+
+section .healthcare .card-section .product-card, section .about-us .card-section .product-card, section .gallery .card-section .product-card, section .furniture .card-section .product-card {
+  display: grid;
+  grid-template-rows: 32px 320px auto auto;
+  gap: 12px;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background-color: rgba(249, 127, 4, 0.9921568627);
+}
+
+section .healthcare .card-section .product-card button, section .about-us .card-section .product-card button, section .gallery .card-section .product-card button, section .furniture .card-section .product-card button {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  justify-self: end;
+  border: none;
+  background: none;
+}
+
+section .healthcare .card-section .product-card button svg, section .about-us .card-section .product-card button svg, section .gallery .card-section .product-card button svg, section .furniture .card-section .product-card button svg {
+  width: 36px;
+  height: 36px;
+}
+
+section .healthcare .card-section .product-card button svg path, section .about-us .card-section .product-card button svg path, section .gallery .card-section .product-card button svg path, section .furniture .card-section .product-card button svg path {
+  stroke: #7C6A0A;
+}
+
+section .healthcare .card-section .product-card .product-image, section .about-us .card-section .product-card .product-image, section .gallery .card-section .product-card .product-image, section .furniture .card-section .product-card .product-image {
+  width: 100%;
+  height: 100%;
+}
+
+section .healthcare .card-section .product-card .product-image img, section .about-us .card-section .product-card .product-image img, section .gallery .card-section .product-card .product-image img, section .furniture .card-section .product-card .product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+section .healthcare .card-section .product-card p, section .about-us .card-section .product-card p, section .gallery .card-section .product-card p, section .furniture .card-section .product-card p, section .healthcare .card-section .product-card h3, section .about-us .card-section .product-card h3, section .gallery .card-section .product-card h3, section .furniture .card-section .product-card h3 {
+  margin: 0;
+}
+
+section .furniture .card-section .product-card {
+  background-color: #f1b308;
+  color: white;
+}
+
+section .furniture .card-section .product-card button {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  justify-self: end;
+  border: none;
+  background: none;
+}
+
+section .furniture .card-section .product-card button svg {
+  width: 36px;
+  height: 36px;
+}
+
+section .furniture .card-section .product-card button svg path {
+  stroke: white;
+}
+
+section .about-us h2, section .gallery h2 {
+  font-weight: bold;
+}
+
+section .about-us .mission-section, section .gallery .mission-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+section .about-us .mission-section .earth, section .gallery .mission-section .earth, section .about-us .mission-section .innovation, section .gallery .mission-section .innovation {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+section .about-us .mission-section .earth img, section .gallery .mission-section .earth img, section .about-us .mission-section .innovation img, section .gallery .mission-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section .about-us .mission-section .earth p, section .gallery .mission-section .earth p, section .about-us .mission-section .innovation p, section .gallery .mission-section .innovation p {
+  text-align: center;
+  color: #FA9500;
+  font-size: 1.5em;
+}
+
+.gallery-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-images img {
+  aspect-ratio: 1/1;
+  height: 100%;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.1);
+}
+
+.location {
+  padding-bottom: 60px;
+}
+
+.location .map img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.location h3, .location p {
+  color: #FA9500;
+}
+
+.location h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #FA9500;
+  height: auto;
+  padding: 32px 72px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer h3, .footer p {
+  display: inline-block;
+}
+
+.footer .social-media {
+  width: 100%;
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    padding: 0 4%;
+  }
+  .main {
+    padding: 0 4%;
+  }
+  .main article {
+    grid-template-columns: auto;
+  }
+  .main article .image-section {
+    width: 100%;
+  }
+  .main article .image-section img {
+    margin-top: 12px;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    height: auto;
+  }
+  section h2 {
+    color: #7C6A0A;
+    font-size: 2em;
+  }
+  section .healthcare .card-section, section .furniture .card-section, section .about-us .card-section, section .gallery .card-section {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    grid-auto-flow: column;
+    grid-template-columns: 92%;
+    grid-auto-columns: 92%;
+    grid-auto-rows: auto;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
+  section .healthcare .card-section .product-card, section .furniture .card-section .product-card, section .about-us .card-section .product-card, section .gallery .card-section .product-card {
+    scroll-snap-align: center;
+    padding: 12% 8%;
+  }
+  section .about-us .mission-section, section .gallery .mission-section {
+    flex-direction: column;
+  }
+  section .about-us .mission-section .earth, section .gallery .mission-section .earth, section .about-us .mission-section .innovation, section .gallery .mission-section .innovation {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .location .map {
+    width: 100%;
+    height: 80vh;
+  }
+  .gallery-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gallery-images img {
+    width: 100%;
+  }
+  .footer {
+    padding: 4% 4%;
+  }
+}/*# sourceMappingURL=main.css.map */
